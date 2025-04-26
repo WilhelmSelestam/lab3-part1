@@ -191,7 +191,12 @@ void PriorityQueue<Comparable>::heapify() {
     /*
      * ADD CODE HERE
      */
-}
+
+    int n = pq.size() - 1;
+
+    for (int i = n / 2; i >= 1; i--) {
+        percolateDown()
+    }
 
 /**
  * Test whether pq is a min heap
