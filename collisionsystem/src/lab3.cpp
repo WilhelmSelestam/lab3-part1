@@ -81,6 +81,8 @@ void runSimulation() {
     std::cout << "Particles file (complete path): ";
     std::string name;
     std::cin >> name;
+
+    name = "C:/Skola/TND004 - Datastrukturer/lab3-part1/collisionsystem/data/p2000.txt";
     
     std::filesystem::path particlesFile = name;
     auto theParticles = read_particles(particlesFile);
